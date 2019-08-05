@@ -1,2 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
 html {box-sizing:border-box;}
-*, *::before, *::after {box-sizing:inherit;}
+*, *::before, *::after {box-sizing:inherit; font-family: 'Roboto', sans-serif;}
+
+#show {
+  background:pink;
+}
+
+/* start of navbar style */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background: black;
+}
+
+.nav button, .nav div {
+  width: 50px;
+}
+
+.nav div h6 {
+  text-align: center;
+}
+
+.appBarContent {
+    width: 100%;
+    overflow: hidden;
+    height: 0;
+    transition: height 1s;
+    margin-top:0;
+    background: black;
+  }
+
+  .show {
+    height: 350px;
+    
+  }
+
+  .focus {
+    border:2px solid white;
+    border-right:2px solid white;
+    border-radius: 5px;
+  }
+
+/* cart style */
+
+.cart ul {
+  display: flex;
+  flex-direction: row;
+}
+
+/* end of navbar style */
+
+
+
+
+/* start of main content style */
+  .card {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card:hover {
+    cursor: pointer;
+  }
+
+  .cardMedia {
+    
+    height: 450px;
+  }
+
+  .cartMedia {
+    height:100px;
+  }
+
+  .cardContent {
+    padding-top:15px;
+    padding-left:15px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+
+  .MuiCardContent-root:last-child{
+    padding-top:0;
+  }
+
+  .more {
+    height: 0;
+    transition: height 1s, opacity 1s;
+    opacity: 0;
+    overflow: hidden;
+    padding-top: 0px;
+    padding-left: 15px;
+    margin-top:0;
+  }
+
+  .more > p {
+    margin-bottom:0;
+  }
+
+  input[type=checkbox]:checked ~ .more {
+    height: 150px;
+    opacity: 1;
+  }
+
+  main .add {
+    margin-top:10px;
+    width:100%;
+  }
+
+  main button span {
+    margin-right: 5px;
+  }
+
+  /* input[type=checkbox]:checked ~ .more {
+    padding:0;
+    margin-top: 10px;
+    height: 400px;
+    opacity: 1;
+  }
+
+  input[type=checkbox] {
+    display: none;
+  } */
+
+  /* .showMore {
+    height: 150px;
+    opacity: 1;
+  } */
+
+  .showContent {
+    margin-top:5px;
+    padding: 10px;
+  }
+
+  .showContent:hover {
+    background: rgba(218, 218, 218, 0.719);
+    border-radius: 5px;
+  }
+
+  .ship {
+    position: relative;
+    bottom: 455px;
+    left: 170px;
+    background: black;
+    color:white;
+    font-size: 12px;
+    padding:5px;
+  }
+
+.error {
+  color:red;
+}
+
+.input > input[type=checkbox]:checked  {
+  background:black;
+}
+  
+.MuiButton-root {
+  min-width: 45px;
+}
+
+.heading {
+  position: absolute;
+  left:270px;
+  top:100px;
+  font-size: 16px;
+}
+
+.sub {
+  position: relative;
+  top: 282px;
+  left: 37px;
+}
